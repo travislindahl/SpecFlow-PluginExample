@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+      <TargetFrameworks>net461;netcoreapp2.1</TargetFrameworks>
+      <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+      <NuspecFile>$(MSBuildThisFileDirectory)PluginExample.CustomPlugin.nuspec</NuspecFile>
+      <AssemblyName>PluginExample.CustomPlugin.SpecFlowPlugin</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SpecFlow.CustomPlugin" Version="3.3.74" />
+  </ItemGroup>
+
+</Project>

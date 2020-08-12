@@ -1,0 +1,7 @@
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_CustomGeneratorPluginFramework Condition=" '$(MSBuildRuntimeType)' == 'Core'">netcoreapp2.1</_CustomGeneratorPluginFramework>
+    <_CustomGeneratorPluginFramework Condition=" '$(MSBuildRuntimeType)' != 'Core'">net461</_CustomGeneratorPluginFramework>
+    <_CustomGeneratorPluginPath>$(MSBuildThisFileDirectory)\$(_CustomGeneratorPluginFramework)\PluginExample.CustomPlugin.SpecFlowPlugin.dll</_CustomGeneratorPluginPath
+  </PropertyGroup>
+</Project>
